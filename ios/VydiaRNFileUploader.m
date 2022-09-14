@@ -434,7 +434,7 @@ RCT_EXPORT_METHOD(endBackgroundTask: (NSUInteger)taskId resolve:(RCTPromiseResol
 
             // UPDATE: Enforce a timeout here because we will otherwise
             // not get errors if the server times out
-            sessionConfiguration.timeoutIntervalForResource = 5 * 60;
+            // sessionConfiguration.timeoutIntervalForResource = 5 * 60;
 
             _urlSession = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:self delegateQueue:nil];
         }
